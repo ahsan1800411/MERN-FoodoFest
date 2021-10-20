@@ -36,3 +36,13 @@ h1 {
 .flex-container {
   display: flex;
 }
+
+.btn {
+  background-color: red !important;
+  color: white !important;
+}
+
+select {
+  box-shadow: none !important;
+  border-color: #000 !important;
+}
