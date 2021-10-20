@@ -1,7 +1,14 @@
+import { useEffect } from 'react';
 import Pizza from '../components/Pizza';
 import pizzas from './../data';
+import { useDispatch, useSelector } from 'react-redux';
+import { getAllPizzas } from '../actions/pizzaActions';
 
 export default function HomeScreen() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getAllPizzas());
+  }, []);
   return (
     <div>
       <div className='row'>
